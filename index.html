@@ -1,33 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style>
+body{
+  font-family: sans-serif;
+}
+.container{ 
+  position: relative;
+  background: cyan;
+  width: 50%;
+  height:35px;
+  border 2px solid black;
+}
+.Hmm{
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 2s;
+}
 
-<html lang="en">
+.realize { 
+  background: blue;
+  z-index: 2;
+}
 
-<head>
+.enjoy { 
+  background: red;
+  animation: enjoy 2s infinite;
+  z-index: 1;
+}
 
-  <meta charset="UTF-8">
+@keyframes enjoy{
+  50%{z-index: 1;}
+  100%{z-index:3;}
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+shit{
+  background: red;
+  height: 100px;
+  width: 100px;
+}
+shit{
+  background: green;
+  height: 100px;
+  width: 100px;
+}
+san dv{
+  display: inline;
+}
 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Input Label Animaton | CoderGirl</title>
-
-  <!---Custom CSS File--->
-
-  <link rel="stylesheet" href="style.css">
-
-</head>
-
+</style> 
+</head> 
 <body>
+<center>
+<h1> JOIN AK TODAY, AND</h1> 
+ 
+<div class="container"> 
+  <div class="Hmm realize"> REALIZE </div> 
+  <div class="Hmm enjoy"> ENJOY</div> 
+</div> 
 
-  <div class="input-field">
+<h1> THE HAPPINESS </h1> 
 
-    <input type="text" required spellcheck="false"> 
 
-    <label>Enter email</label>
+  <shit>
+  </shit>
 
-  </div>
 
-</body>
-
+  <shit class='B'>
+  </shit>
+</body> 
 </html>
